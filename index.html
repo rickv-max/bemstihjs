@@ -2,86 +2,51 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BEM STIH JENDERAL SUDIRMAN LUMAJANG</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-  <div class="logo">BEM STIH JENDERAL SUDIRMAN LUMAJANG</div>
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#tentang">Tentang</a></li>
-    <li><a href="#program">Program</a></li>
-    <li><a href="#struktur">Struktur</a></li>
-    <li><a href="#galeri">Galeri</a></li>
-    <li><a href="#kontak">Kontak</a></li>
-  </ul>
-</nav>
-    <section class="hero">
-      <h1>Kabinet Naya Darsa</h1>
-      <p>Pandangan Baru dalam Kepemimpinan Mahasiswa Hukum</p>
-      <button onclick="openForm()">Ajukan Aspirasi</button>
-    </section>
+  <nav class="navbar">
+    <div class="logo">BEM STIH JENDERAL SUDIRMAN LUMAJANG</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#dokumentasi">Dokumentasi</a></li>
+      <li><a href="#kampus">Kampus</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Selamat Datang di Website Resmi</h1>
+    <p>Badan Eksekutif Mahasiswa STIH Jenderal Sudirman Lumajang</p>
   </header>
 
-  <main>
-    <section id="tentang" class="section">
-      <h2>Tentang Kami</h2>
-      <p>Visi, misi, dan filosofi kepemimpinan progresif mahasiswa hukum STIH Jaya Sakti.</p>
-    </section>
-
-    <section id="program" class="section">
-      <h2>Program Kerja Unggulan</h2>
-      <div class="grid">
-        <div class="card">Advokasi Mahasiswa</div>
-        <div class="card">Seminar Hukum Nasional</div>
-        <div class="card">Pengabdian Masyarakat</div>
-      </div>
-    </section>
-
-    <section id="struktur" class="section">
-      <h2>Struktur Organisasi</h2>
-      <div class="grid team">
-        <div class="card"><img src="#" alt="Ketua" /><p>Ketua BEM</p></div>
-        <div class="card"><img src="#" alt="Wakil" /><p>Wakil Ketua</p></div>
-        <div class="card"><img src="#" alt="Sekretaris" /><p>Sekretaris</p></div>
-      </div>
-    </section>
-
-    <section id="galeri" class="section">
-      <h2>Dokumentasi Kegiatan</h2>
-      <div class="grid gallery">
-        <img src="#" alt="Kegiatan 1" />
-        <img src="#" alt="Kegiatan 2" />
-        <img src="#" alt="Kegiatan 3" />
-      </div>
-    </section>
-  </main>
-
-  <footer id="kontak">
-    <div class="socials">
-      <a href="#"><img src="#" alt="Instagram" />@BEMSTIHJS</a>
-      <a href="#"><img src="#" alt="TikTok" />@BEMSTIHJS</a>
-      <a href="#"><img src="#" alt="Facebook" />@BEMSTIHJS</a>
+  <section id="dokumentasi" class="dokumentasi">
+    <h2>Dokumentasi Kegiatan</h2>
+    <div class="dokumentasi-item">
+      <img src="dok1.jpg" alt="Dokumentasi 1"/>
+      <p>Pelantikan pengurus baru BEM STIH Jenderal Sudirman periode 2025/2026.</p>
     </div>
+    <div class="dokumentasi-item">
+      <img src="dok2.jpg" alt="Dokumentasi 2"/>
+      <p>Kegiatan bakti sosial mahasiswa hukum bersama warga desa binaan.</p>
+    </div>
+  </section>
+
+  <section id="kampus" class="kampus-section">
+    <h2>Lingkungan Kampus</h2>
+    <img src="kampus.jpg" alt="Lingkungan Kampus"/>
+    <p class="alamat">V66J+4R5, Jl. Suwandak, Jogotrunan, Kec. Lumajang, Kabupaten Lumajang, Jawa Timur 67316</p>
+  </section>
+
+  <footer class="footer" id="kontak">
     <p>&copy; 2025 BEM STIH JENDERAL SUDIRMAN LUMAJANG</p>
+    <a href="https://www.instagram.com/bemstihjs?igsh=MTF5cjlsN3huajF0cw==" target="_blank">
+      <img src="instagram.png" alt="Instagram" class="instagram-icon"/>
+    </a>
   </footer>
-
-  <!-- Modal Form -->
-  <div id="formModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeForm()">&times;</span>
-      <h3>Ajukan Aspirasi / Bantuan</h3>
-      <form>
-        <input type="text" placeholder="Nama" required />
-        <input type="email" placeholder="Email" required />
-        <textarea placeholder="Pesan..." required></textarea>
-        <button type="submit">Kirim</button>
-      </form>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
