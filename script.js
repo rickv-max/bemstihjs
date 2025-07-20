@@ -1,3 +1,7 @@
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('active');
+}
+
 function openForm() {
   document.getElementById('formModal').style.display = 'block';
 }
