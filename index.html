@@ -4,11 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Beranda - BEM STIH JS</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
-  <!-- Navbar -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <div class="logo">BEM STIH JS</div>
@@ -17,25 +16,18 @@
         <li><a href="profil.html">Profil</a></li>
         <li><a href="kabinet.html">Kabinet</a></li>
       </ul>
-      <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </div>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero" id="home">
+  <section class="hero">
     <div class="hero-content">
       <h1>BEM STIH Jenderal Sudirman</h1>
       <p>Bersama Mewujudkan Kepemimpinan Mahasiswa yang Progresif, Visioner, dan Berdampak Nyata</p>
-      <a href="profil.html" class="cta-button">
-        <span>Pelajari Lebih Lanjut</span>
-        <i class="fas fa-arrow-right"></i>
-      </a>
+      <a href="profil.html" class="cta-button">Pelajari Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
     </div>
   </section>
 
-  <!-- Dokumentasi -->
   <section class="section">
     <div class="container">
       <h2 class="section-title">Dokumentasi Kegiatan</h2>
@@ -44,55 +36,56 @@
           <div class="card-image"><i class="fas fa-users"></i></div>
           <div class="card-content">
             <h3>Forum Aspirasi Mahasiswa</h3>
-            <p>Media terbuka untuk menyampaikan aspirasi mahasiswa kepada kampus.</p>
+            <p>Media terbuka untuk menyampaikan aspirasi kepada pihak kampus.</p>
           </div>
         </div>
         <div class="card">
           <div class="card-image"><i class="fas fa-gavel"></i></div>
           <div class="card-content">
             <h3>Seminar Hukum Nasional</h3>
-            <p>Diskusi seputar isu hukum terkini bersama narasumber nasional.</p>
+            <p>Diskusi isu hukum terkini bersama narasumber nasional.</p>
           </div>
         </div>
         <div class="card">
           <div class="card-image"><i class="fas fa-heart"></i></div>
           <div class="card-content">
             <h3>Pengabdian Masyarakat</h3>
-            <p>Kegiatan sosial yang berdampak nyata bagi warga sekitar kampus.</p>
+            <p>Kegiatan sosial berdampak nyata bagi masyarakat sekitar.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Gambar Lingkungan Kampus -->
   <section class="section campus-photo">
-    <img src="https://via.placeholder.com/1200x400" alt="Lingkungan Kampus" />
+    <div class="container">
+      <img src="https://via.placeholder.com/1200x400" alt="Lingkungan Kampus" />
+    </div>
   </section>
 
-  <!-- Footer -->
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <h4>Kontak</h4>
-      <p><i class="fas fa-map-marker-alt"></i> V66J+4R5, Jl. Suwandak, Jogotrunan</p>
-      <p>Kec. Lumajang, Kabupaten Lumajang</p>
-      <p>Jawa Timur 67316</p>
-      <p><i class="fas fa-envelope"></i> bem@stihjs.ac.id</p>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Kontak</h4>
+        <p><i class="fas fa-map-marker-alt"></i> V66J+4R5, Jl. Suwandak, Jogotrunan</p>
+        <p>Kec. Lumajang, Kabupaten Lumajang</p>
+        <p>Jawa Timur 67316</p>
+        <p><i class="fas fa-envelope"></i> bem@stihjs.ac.id</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="unde.html">Beranda</a></p>
+        <p><a href="profil.html">Profil</a></p>
+        <p><a href="kabinet.html">Kabinet</a></p>
+        <p><a href="#kegiatan">Kegiatan</a></p>
+        <p><a href="#kontak">Kontak</a></p>
+      </div>
     </div>
-    <div>
-      <h4>Quick Links</h4>
-      <p><a href="unde.html">Beranda</a></p>
-      <p><a href="profil.html">Profil</a></p>
-      <p><a href="kabinet.html">Kabinet</a></p>
-      <p><a href="#kegiatan">Kegiatan</a></p>
-      <p><a href="#kontak">Kontak</a></p>
+    <div class="footer-bottom">
+      <p>&copy; 2025 BEM STIH Jenderal Sudirman Lumajang. All rights reserved.</p>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 BEM STIH Jenderal Sudirman Lumajang. All rights reserved.</p>
-  </div>
-</footer>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
