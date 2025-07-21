@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kabinet - BEM STIH</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
+  <title>Kabinet - BEM STIH JS</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
-  <header class="navbar">
-    <div class="container">
-      <a href="index.html" class="brand">BEM STIH</a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="kabinet.html" class="active">Kabinet</a></li>
-          <li><a href="profil.html">Profil</a></li>
-        </ul>
-      </nav>
-      <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">BEM STIH JS</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="unde.html">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="kabinet.html" class="active">Kabinet</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <main class="container">
-    <h2 class="section-title">Anggota Kabinet 2025</h2>
-    <section class="grid">
-      <div class="member-card">
-        <img src="https://via.placeholder.com/150" alt="Ketua" />
-        <h4>Nama Ketua</h4>
-        <p>Ketua Umum</p>
-      </div>
-      <div class="member-card">
-        <img src="https://via.placeholder.com/150" alt="Wakil Ketua" />
-        <h4>Nama Wakil</h4>
-        <p>Wakil Ketua</p>
-      </div>
-      <!-- Tambahkan anggota lain di sini -->
-    </section>
-  </main>
-
-  <footer class="footer">
+  <!-- Kabinet Section -->
+  <section class="section">
     <div class="container">
-      <p>&copy; 2025 BEM STIH.</p>
+      <h2 class="section-title">Struktur Kabinet</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-image"><img src="https://via.placeholder.com/150" alt="Ketua" /></div>
+          <div class="card-content">
+            <h3>Nama Ketua</h3>
+            <p>Ketua Umum BEM</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="https://via.placeholder.com/150" alt="Wakil Ketua" /></div>
+          <div class="card-content">
+            <h3>Nama Wakil</h3>
+            <p>Wakil Ketua BEM</p>
+          </div>
+        </div>
+        <!-- Tambah anggota lain sesuai kebutuhan -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Lengkap -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Kontak</h4>
+        <p><i class="fas fa-map-marker-alt"></i> V66J+4R5, Jl. Suwandak, Jogotrunan</p>
+        <p>Kec. Lumajang, Kabupaten Lumajang</p>
+        <p>Jawa Timur 67316</p>
+        <p><i class="fas fa-envelope"></i> bem@stihjs.ac.id</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="unde.html">Beranda</a></p>
+        <p><a href="profil.html">Profil</a></p>
+        <p><a href="kabinet.html">Kabinet</a></p>
+        <p><a href="#kegiatan">Kegiatan</a></p>
+        <p><a href="#kontak">Kontak</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 BEM STIH Jenderal Sudirman Lumajang. All rights reserved.</p>
     </div>
   </footer>
 
