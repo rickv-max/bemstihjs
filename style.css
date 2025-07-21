@@ -1,169 +1,180 @@
-/* Reset */
+/* Reset dan Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* Font */
-body {
   font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background: #f5f7fa;
+}
+
+body {
+  background-color: #ffffff;
   color: #333;
+  line-height: 1.6;
 }
 
-/* Container */
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 1rem;
-}
-
-/* Navbar */
+/* Header / Navbar */
 .navbar {
-  background-color: #4b0082;
-  color: #fff;
   position: fixed;
-  width: 100%;
   top: 0;
-  z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.navbar .container {
+  width: 100%;
+  background-color: #005b2f;
+  color: #fff;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
 }
 
 .logo {
-  font-size: 1.5rem;
   font-weight: bold;
-  color: white;
+  font-size: 1.4rem;
 }
 
 .nav-links {
   display: flex;
   gap: 1.5rem;
-  list-style: none;
 }
 
 .nav-links a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
   font-weight: 500;
-  transition: 0.3s ease;
 }
 
-.nav-links a:hover,
-.nav-links .active {
-  color: #ffc107;
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
-/* Hamburger */
 .hamburger {
   display: none;
-  flex-direction: column;
-  gap: 5px;
+  font-size: 1.8rem;
   cursor: pointer;
-}
-
-.hamburger span {
-  height: 3px;
-  width: 25px;
-  background: white;
-  display: block;
-  border-radius: 5px;
+  color: white;
 }
 
 /* Hero */
 .hero {
-  padding-top: 100px;
-  background: url('img/hero.jpg') no-repeat center center/cover;
-  height: 400px;
+  background: url('img/hero-bg.jpg') center/cover no-repeat;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 70px;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
   color: white;
   text-align: center;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  background: rgba(0,0,0,0.5);
-  padding: 1rem;
   border-radius: 10px;
 }
 
-/* Section */
-.kabinet-section, .profil-section {
-  padding: 6rem 1rem 3rem;
-}
-
-/* Card */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.card {
-  background: white;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
+.hero-overlay h1 {
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
-.card h3 {
+.hero-overlay p {
+  font-size: 1.1rem;
+}
+
+/* Dokumentasi */
+.dokumentasi {
+  padding: 3rem 2rem;
+  background-color: white;
+  text-align: center;
+}
+
+.dokumentasi h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #005b2f;
+}
+
+.dokumen-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.dokumen-item img {
+  width: 100%;
+  border-radius: 8px;
   margin-bottom: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Kampus */
+.kampus {
+  background: linear-gradient(to bottom, #005b2f, #007c40);
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.kampus h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.kampus-img {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.alamat {
+  font-size: 1rem;
 }
 
 /* Footer */
-.footer {
-  background: #4b0082;
+footer {
+  background-color: #00371a;
   color: white;
   text-align: center;
-  padding: 1.5rem 0;
-  margin-top: 4rem;
+  padding: 1.5rem 1rem;
+  position: relative;
 }
 
-.footer img {
-  width: 24px;
-  vertical-align: middle;
-  margin-left: 10px;
+.ig-icon {
+  width: 30px;
+  margin-top: 10px;
 }
 
 /* Responsive */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    flex-direction: column;
-    background: #4b0082;
-    width: 100%;
     display: none;
-    text-align: center;
-    padding: 1rem 0;
+    flex-direction: column;
+    background-color: #004420;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
   }
 
-  .nav-links.show {
+  .nav-links.active {
     display: flex;
   }
 
   .hamburger {
-    display: flex;
+    display: block;
   }
+
+  .hero-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+}
+.navbar.scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  background-color: #004420;
+  transition: background-color 0.3s ease;
 }
