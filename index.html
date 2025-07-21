@@ -3,89 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Beranda - BEM STIH</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
+  <title>Beranda - BEM STIH JS</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header class="navbar">
-    <div class="container">
-      <a href="index.html" class="brand">BEM STIH</a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Beranda</a></li>
-          <li><a href="kabinet.html">Kabinet</a></li>
-          <li><a href="profil.html">Profil</a></li>
-        </ul>
-      </nav>
-      <button class="hamburger" onclick="toggleMenu()">☰</button>
-    </div>
-  </header>
-
-  <main class="container">
-    <!-- Hero Section -->
-    <section class="hero">
-      <h1>Selamat Datang di BEM STIH</h1>
-      <p>Mewadahi dan menginspirasi semangat mahasiswa untuk berkarya.</p>
-      <a href="profil.html" class="btn-primary">Pelajari Lebih</a>
-    </section>
-
-    <!-- Dokumentasi Kegiatan -->
-    <section class="documentation">
-      <h2 class="section-title">Dokumentasi Kegiatan</h2>
-      <div class="doc-grid">
-        <article class="doc-card">
-          <img src="https://via.placeholder.com/300x200" alt="Kegiatan 1">
-          <div class="doc-content">
-            <h4>Workshop Desain Grafis</h4>
-            <p>Pelatihan intensif pembuatan poster dan konten media sosial.</p>
-          </div>
-        </article>
-        <article class="doc-card">
-          <img src="https://via.placeholder.com/300x200" alt="Kegiatan 2">
-          <div class="doc-content">
-            <h4>Diskusi Publik</h4>
-            <p>Diskusi tuntas tentang peran mahasiswa dalam kebijakan kampus.</p>
-          </div>
-        </article>
-        <article class="doc-card">
-          <img src="https://via.placeholder.com/300x200" alt="Kegiatan 3">
-          <div class="doc-content">
-            <h4>Konser Amal</h4>
-            <p>Kolaborasi seni dan bakti sosial untuk warga sekitar kampus.</p>
-          </div>
-        </article>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">BEM STIH JS</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="unde.html" class="active">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="kabinet.html">Kabinet</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
       </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-      <article class="card">
-        <h3>Agenda Rutin</h3>
-        <p>Kajian, workshop, dan diskusi ilmiah setiap bulan.</p>
-      </article>
-      <article class="card">
-        <h3>Program Kerja</h3>
-        <p>Inisiatif sosial, bakti lingkungan, dan kompetisi internal.</p>
-      </article>
-      <article class="card">
-        <h3>Kolaborasi</h3>
-        <p>Bermitra dengan organisasi kampus lain dan stakeholders.</p>
-      </article>
-    </section>
-
-    <!-- Gambar Lingkungan Kampus -->
-    <section class="campus-image">
-      <img src="https://via.placeholder.com/1200x400" alt="Lingkungan Kampus">
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 BEM STIH. All rights reserved.</p>
     </div>
-  </footer>
+  </nav>
 
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>BEM STIH Jenderal Sudirman</h1>
+      <p>Bersama Mewujudkan Kepemimpinan Mahasiswa yang Progresif, Visioner, dan Berdampak Nyata</p>
+      <a href="profil.html" class="cta-button">
+        <span>Pelajari Lebih Lanjut</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Dokumentasi -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Dokumentasi Kegiatan</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-image"><i class="fas fa-users"></i></div>
+          <div class="card-content">
+            <h3>Forum Aspirasi Mahasiswa</h3>
+            <p>Media terbuka untuk menyampaikan aspirasi mahasiswa kepada kampus.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image"><i class="fas fa-gavel"></i></div>
+          <div class="card-content">
+            <h3>Seminar Hukum Nasional</h3>
+            <p>Diskusi seputar isu hukum terkini bersama narasumber nasional.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image"><i class="fas fa-heart"></i></div>
+          <div class="card-content">
+            <h3>Pengabdian Masyarakat</h3>
+            <p>Kegiatan sosial yang berdampak nyata bagi warga sekitar kampus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gambar Lingkungan Kampus -->
+  <section class="section campus-photo">
+    <img src="https://via.placeholder.com/1200x400" alt="Lingkungan Kampus" />
+  </section>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Kontak</h4>
+      <p><i class="fas fa-map-marker-alt"></i> V66J+4R5, Jl. Suwandak, Jogotrunan</p>
+      <p>Kec. Lumajang, Kabupaten Lumajang</p>
+      <p>Jawa Timur 67316</p>
+      <p><i class="fas fa-envelope"></i> bem@stihjs.ac.id</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <p><a href="unde.html">Beranda</a></p>
+      <p><a href="profil.html">Profil</a></p>
+      <p><a href="kabinet.html">Kabinet</a></p>
+      <p><a href="#kegiatan">Kegiatan</a></p>
+      <p><a href="#kontak">Kontak</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 BEM STIH Jenderal Sudirman Lumajang. All rights reserved.</p>
+  </div>
+</footer>
   <script src="script.js"></script>
 </body>
 </html>
