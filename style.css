@@ -1,189 +1,234 @@
-/* Reset dan Base */
+/* Reset & Base */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
 }
-
 body {
-  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
   color: #333;
   line-height: 1.6;
+  background: #f9f9f9;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
 }
 
-/* Header / Navbar */
+/* Navbar */
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #005b2f;
+  background: #004085;
   color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 0;
   z-index: 1000;
 }
-
-.logo {
-  font-weight: bold;
-  font-size: 1.4rem;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  color: white;
+.navbar .brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #fff;
   text-decoration: none;
-  font-weight: 500;
+}
+.navbar nav {
+  display: inline-block;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar li {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+}
+.navbar a.active,
+.navbar a:hover {
+  color: #ffd54f;
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
-}
-
+/* Hamburger */
 .hamburger {
   display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: white;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
-  background: url('img/hero-bg.jpg') center/cover no-repeat;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 70px;
-}
-.hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-              url('img/hero-bg.jpg') center/cover no-repeat;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 70px;
-}
-
-.hero-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 2rem;
-  color: white;
   text-align: center;
-  border-radius: 10px;
+  padding: 4rem 0;
+  background: url('https://via.placeholder.com/1200x500') center/cover no-repeat;
+  color: #fff;
 }
-
-.hero-overlay h1 {
-  font-size: 2.2rem;
+.hero h1 {
+  font-size: 2.8rem;
   margin-bottom: 1rem;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
-
-.hero-overlay p {
-  font-size: 1.1rem;
+.hero p {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+.btn-primary {
+  background: #ffd54f;
+  color: #004085;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* Dokumentasi */
-.dokumentasi {
-  padding: 3rem 2rem;
-  background-color: white;
-  text-align: center;
+.documentation {
+  padding: 3rem 0;
 }
-
-.dokumentasi h2 {
-  font-size: 1.8rem;
+.documentation .section-title {
+  text-align: center;
   margin-bottom: 2rem;
-  color: #005b2f;
+  color: #004085;
 }
-
-.dokumen-grid {
+.doc-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-
-.dokumen-item img {
+.doc-card {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.doc-card:hover {
+  transform: translateY(-5px);
+}
+.doc-card img {
   width: 100%;
-  border-radius: 8px;
+  height: auto;
+}
+.doc-content {
+  padding: 1rem;
+}
+.doc-content h4 {
   margin-bottom: 0.5rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  color: #333;
+}
+.doc-content p {
+  font-size: 0.95rem;
+  color: #555;
 }
 
-/* Kampus */
-.kampus {
-  background: linear-gradient(to bottom, #005b2f, #007c40);
-  color: white;
+/* Features */
+.features {
+  display: flex;
+  gap: 1rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  flex: 1 1 calc(33% - 1rem);
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
   text-align: center;
-  padding: 3rem 2rem;
 }
 
-.kampus h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+/* Gambar Lingkungan Kampus */
+.campus-image {
+  margin: 2rem 0;
 }
-
-.kampus-img {
+.campus-image img {
   width: 100%;
-  max-width: 720px;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+  border-radius: 6px;
+  object-fit: cover;
 }
 
-.alamat {
-  font-size: 1rem;
+/* Grid for Kabinet */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.member-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+.member-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+}
+
+/* Profil */
+.section-title {
+  margin: 2rem 0 1rem;
+  color: #004085;
+}
+.info-list {
+  list-style: disc;
+  padding-left: 1.5rem;
 }
 
 /* Footer */
-footer {
-  background-color: #00371a;
-  color: white;
+.footer {
+  background: #004085;
+  color: #fff;
   text-align: center;
-  padding: 1.5rem 1rem;
-  position: relative;
+  padding: 1rem 0;
+  margin-top: 2rem;
 }
 
-.ig-icon {
-  width: 30px;
-  margin-top: 10px;
-}
-
-/* Responsive */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  .nav-links {
+  /* Navbar */
+  .navbar {
+    position: relative;
+  }
+  .navbar nav {
     display: none;
-    flex-direction: column;
-    background-color: #004420;
     position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    padding: 1rem;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #004085;
   }
-
-  .nav-links.active {
+  .navbar nav ul {
     display: flex;
+    flex-direction: column;
+    text-align: center;
   }
-
-  .hamburger {
+  .navbar nav li {
     display: block;
+    margin: 0.75rem 0;
+  }
+  .hamburger {
+    display: inline-block;
   }
 
-  .hero-overlay h1 {
-    font-size: 1.5rem;
+  /* Hero text size */
+  .hero h1 {
+    font-size: 2rem;
   }
-
-  .hero-overlay p {
+  .hero p {
     font-size: 1rem;
   }
-}
-.navbar.scrolled {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  background-color: #004420;
-  transition: background-color 0.3s ease;
+
+  /* Features vertical stack */
+  .features {
+    flex-direction: column;
+  }
 }
