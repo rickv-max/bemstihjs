@@ -4,117 +4,68 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BEM STIH Jenderal Sudirman Lumajang</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">BEM STIH JS</div>
-      <ul class="nav-links">
-        <li><a href="#profil">Profil</a></li>
-        <li><a href="#kabinet">Kabinet</a></li>
-        <li><a href="#dokumentasi">Dokumentasi</a></li>
-        <li><a href="#kampus">Kampus</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-      </ul>
-      <div class="hamburger">&#9776;</div>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">BEM STIH JS</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="profil.html">Profil</a>
+      <a href="kabinet.html">Struktur Kabinet</a>
     </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>Selamat Datang di Website Resmi</h1>
-    <h2>BEM STIH Jenderal Sudirman Lumajang</h2>
-  </section>
-
-  <section id="profil" class="section white">
-    <h2>Profil</h2>
-    <h3>Apa itu BEM STIH JS?</h3>
-    <p>BEM STIH JS adalah lembaga eksekutif mahasiswa yang bertugas menampung, menyuarakan, dan memperjuangkan aspirasi mahasiswa di kampus STIH Jenderal Sudirman Lumajang.</p>
-    <h3>Visi & Misi</h3>
-    <ul>
-      <li>Menjadi garda terdepan dalam perubahan mahasiswa yang berintegritas.</li>
-      <li>Mengembangkan potensi kepemimpinan dan akademik.</li>
-    </ul>
-    <h3>Program Kerja Unggulan</h3>
-    <ul>
-      <li>Forum Aspirasi Mahasiswa</li>
-      <li>Pelatihan Hukum & Debat</li>
-      <li>Kegiatan Sosial dan Advokasi</li>
-    </ul>
-  </section>
-
-  <section id="kabinet" class="section green">
-    <h2>Struktur Kabinet</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Presiden Mahasiswa</h3>
-        <p>Rizky Maulana</p>
-      </div>
-      <div class="card">
-        <h3>Wakil Presiden Mahasiswa</h3>
-        <p>Nadya Pratiwi</p>
-      </div>
-      <div class="card">
-        <h3>Kementerian Dalam Negeri</h3>
-        <p>Ardiansyah</p>
-      </div>
-      <div class="card">
-        <h3>Kementerian Luar Negeri</h3>
-        <p>Dina Ayu</p>
-      </div>
-      <div class="card">
-        <h3>Kementerian Kominfo</h3>
-        <p>Reza Fadhil</p>
-      </div>
-      <div class="card">
-        <h3>Kementerian Hukum & Advokasi</h3>
-        <p>Salsabila Putri</p>
-      </div>
-      <div class="card">
-        <h3>Kementerian Sosial & Politik</h3>
-        <p>Ahmad Fauzan</p>
-      </div>
-      <div class="card">
-        <h3>Kementerian Lingkungan Hidup</h3>
-        <p>Putri Anjani</p>
-      </div>
-      <div class="card">
-        <h3>Kementerian Keuangan</h3>
-        <p>Budi Haryanto</p>
-      </div>
+    <div class="hero-overlay">
+      <h1>Selamat Datang di BEM STIH Jenderal Sudirman Lumajang</h1>
+      <p>Bersama Mewujudkan Kepemimpinan Mahasiswa yang Progresif dan Visioner</p>
     </div>
   </section>
 
-  <section id="dokumentasi" class="section white">
+  <!-- Dokumentasi -->
+  <section class="dokumentasi">
     <h2>Dokumentasi Kegiatan</h2>
-    <div class="gallery">
-      <div class="gallery-item">
+    <div class="dokumen-grid">
+      <div class="dokumen-item">
         <img src="img/kegiatan1.jpg" alt="Kegiatan 1" />
-        <p>Seminar Nasional Hukum 2024</p>
+        <p>Pelantikan Kabinet Naya Darsa 2025</p>
       </div>
-      <div class="gallery-item">
+      <div class="dokumen-item">
         <img src="img/kegiatan2.jpg" alt="Kegiatan 2" />
-        <p>Aksi Damai Anti Kekerasan Seksual</p>
+        <p>Diskusi Publik: Peran Hukum dalam Pemberdayaan Desa</p>
       </div>
-      <div class="gallery-item">
+      <div class="dokumen-item">
         <img src="img/kegiatan3.jpg" alt="Kegiatan 3" />
-        <p>Latihan Kepemimpinan Mahasiswa</p>
+        <p>Aksi Sosial Mahasiswa Hukum Peduli</p>
       </div>
     </div>
   </section>
 
-  <section id="kampus" class="section kampus-section">
+  <!-- Lingkungan Kampus -->
+  <section class="kampus">
     <h2>Lingkungan Kampus</h2>
-    <img src="img/kampus.jpg" alt="Kampus STIH JS" class="kampus-img"/>
-    <p class="alamat">📍 V66J+4R5, Jl. Suwandak, Jogotrunan, Kec. Lumajang, Kabupaten Lumajang, Jawa Timur 67316</p>
+    <img src="img/kampus.jpg" alt="Lingkungan Kampus" class="kampus-img"/>
+    <div class="alamat">
+      <p><strong>Lokasi Kampus:</strong><br/>
+        V66J+4R5, Jl. Suwandak, Jogotrunan, Kec. Lumajang,<br/>
+        Kabupaten Lumajang, Jawa Timur 67316
+      </p>
+    </div>
   </section>
 
-  <footer id="kontak">
+  <!-- Footer -->
+  <footer>
     <p>&copy; 2025 BEM STIH Jenderal Sudirman Lumajang</p>
     <a href="https://www.instagram.com/bemstihjs?igsh=MTF5cjlsN3huajF0cw==" target="_blank">
-      <img src="img/ig-icon.png" alt="Instagram" class="sosmed-icon"/>
+      <img src="img/ig-icon.png" alt="Instagram" class="ig-icon" />
     </a>
   </footer>
+
 </body>
 </html>
